@@ -1,16 +1,12 @@
 onerror {resume}
 quietly WaveActivateNextPane {} 0
-add wave -noupdate /Logic_Circuit/a
-add wave -noupdate /Logic_Circuit/b
-add wave -noupdate /Logic_Circuit/and_out
-add wave -noupdate /Logic_Circuit/or_out
-add wave -noupdate /Logic_Circuit/not_out
-add wave -noupdate /Logic_Circuit/nand_out
-add wave -noupdate /Logic_Circuit/nor_out
-add wave -noupdate /Logic_Circuit/xor_out
-add wave -noupdate /Logic_Circuit/xnor_out
+add wave -noupdate /boolean_function/A
+add wave -noupdate /boolean_function/B
+add wave -noupdate /boolean_function/C
+add wave -noupdate /boolean_function/D
+add wave -noupdate /boolean_function/F
 TreeUpdate [SetDefaultTree]
-WaveRestoreCursors {{Cursor 1} {176 ps} 0}
+WaveRestoreCursors {{Cursor 1} {240 ps} 0}
 quietly wave cursor active 1
 configure wave -namecolwidth 150
 configure wave -valuecolwidth 100
@@ -26,4 +22,4 @@ configure wave -griddelta 40
 configure wave -timeline 0
 configure wave -timelineunits ps
 update
-WaveRestoreZoom {0 ps} {500 ps}
+WaveRestoreZoom {0 ps} {2006 ps}
